@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
 class CashRegister:
-    def _init_(self, discount=0):
+    def __init__(self, discount=0):
         self.discount = discount
         self.total = 0
         self.items = []
@@ -36,6 +35,3 @@ class CashRegister:
         self.total -= last["price"] * last["quantity"]
         for _ in range(last["quantity"]):
             self.items.remove(last["item"])
-
-class CashRegister:
-  pass
